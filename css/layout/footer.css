@@ -1,0 +1,44 @@
+/* This file contains the CSS styles for the footer layout. */
+
+.footer-section ul {
+  margin-top: 3rem; 
+}
+
+.footer-divider {
+  background-color: black;
+  height: 2px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+.footer-section ul li {
+  margin-bottom: 1.5rem; 
+}
+
+
+.footer-section .field.has-addons .input {
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid black;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+
+.footer-section .field.has-addons .input::placeholder {
+  color: black; 
+  opacity: 1; 
+  font-size: 16px; 
+}
+
+
+.footer-section .field.has-addons .button {
+  border: none; 
+  text-decoration: underline; 
+}
+
+.footer-section .field.has-addons .button:hover {
+  background-color: transparent; 
+  color: black; 
+}

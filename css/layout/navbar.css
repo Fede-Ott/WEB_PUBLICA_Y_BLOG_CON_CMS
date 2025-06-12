@@ -1,0 +1,97 @@
+/* This file contains the CSS styles for the navbar layout. */
+.navbar-item img {
+  max-height: 48px !important;
+}
+
+.custom-burger {
+  margin-left: 0.5rem;
+}
+
+.desktop-logo {
+  right: 80px;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.navbar-item:not(.desktop-logo)::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0.5em;
+  width: 50%;
+  height: 2px;
+  background-color: currentColor;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease-out;
+}
+
+.navbar-item:not(.desktop-logo):hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Don't show the divider on focus/active states to prevent flash during navigation */
+.navbar-item:not(.desktop-logo):focus::after,
+.navbar-item:not(.desktop-logo):active::after {
+  transform: translateX(-50%) scaleX(0);
+}
+
+.navbar-item:not(.desktop-logo):hover,
+.navbar-item:not(.desktop-logo):focus,
+.navbar-item:not(.desktop-logo):active {
+  background-color: transparent !important;
+  color: inherit;
+}
+
+/* Increase specificity by adding .navbar */
+.navbar .navbar-item:not(.desktop-logo):hover,
+.navbar .navbar-item:not(.desktop-logo):focus {
+  background-color: transparent !important;
+  color: inherit !important; /* Added !important just in case */
+}
+
+/* Disable transitions when navigating */
+.navigating .navbar-item::after {
+  transition: none !important;
+  transform: translateX(-50%) scaleX(0) !important;
+}
+
+/* Mobile menu styles */
+@media screen and (max-width: 1023px) {
+  /* Make the mobile menu background match the navbar background */
+  .navbar-menu {
+    background-color: inherit !important;
+    box-shadow: none !important;
+  }
+
+  /* When active (open), ensure the menu keeps the same background */
+  .navbar-menu.is-active {
+    background-color: inherit !important;
+    box-shadow: none !important;
+  }
+
+  /* Ensure text is visible against the background */
+  .navbar-menu.is-active .navbar-item {
+    color: black !important;
+  }
+  
+  /* Hide desktop logo in mobile view */
+  .navbar-menu.is-active .navbar-item.navbar-center.desktop-logo {
+    display: none !important;
+  }
+  
+  /* Keep icons in a row on mobile menu */
+  .navbar-menu.is-active .navbar-end {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    margin-top: 1rem !important;
+  }
+  
+  /* Add some spacing between icons */
+  .navbar-menu.is-active .navbar-end .navbar-item {
+    padding: 0.5rem 1rem !important;
+  }
+}

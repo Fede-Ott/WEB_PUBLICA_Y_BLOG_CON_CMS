@@ -1,0 +1,100 @@
+/* This file contains the CSS styles for sections. */
+
+.mood-section {
+  background-image: url("../../assets/images/emotionsocksbg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+/* Ensure the "See all collections" button is always visible */
+.mood-section .button {
+  position: relative;
+  z-index: 5;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.contact-section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.contact-info .icon {
+  vertical-align: middle;
+}
+
+.contact-info > div > p:not(:first-child) {
+  margin-left: 2.25rem;
+}
+
+/* Hero Section */
+.checkout-hero-section {
+  background-image: url("../../assets/images/checkoutbg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.account-hero-section {
+  background-image: url("../../assets/images/accountbg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-hero-section {
+  background-image: url("../../assets/images/aboutbg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.terms-hero-section {
+  background-image: url("../../assets/images/termsheader.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.faq-hero-section {
+  background-image: url("../../assets/images/faqbg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.checkout-hero-section .hero-body {
+  padding-top: 4rem; /* Adjust as needed */
+  padding-bottom: 4rem; /* Adjust as needed */
+}
+
+.account-hero-section .hero-body {
+  padding-top: 4rem; /* Adjust as needed */
+  padding-bottom: 4rem; /* Adjust as needed */
+}
+
+.checkout-hero-section .title,
+.checkout-hero-section .breadcrumb a,
+.checkout-hero-section .breadcrumb span {
+  color: black; /* Ensure text is readable on the background */
+}
+
+.account-hero-section .title,
+.account-hero-section .breadcrumb a,
+.account-hero-section .breadcrumb span {
+  color: black; /* Ensure text is readable on the background */
+}
+
+.checkout-hero-section .breadcrumb li.is-active a {
+  font-weight: bold;
+}
+
+.account-hero-section .breadcrumb li.is-active a {
+  font-weight: bold;
+}
+
+  .shop-grid-section {
+    padding: 4rem 0rem;
+  }
+
+@media screen and (max-width: 768px) {
+  .shop-grid-section {
+    padding: 4rem 1rem;
+  }
+}
