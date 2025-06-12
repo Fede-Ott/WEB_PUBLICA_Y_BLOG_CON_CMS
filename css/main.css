@@ -1,0 +1,11 @@
+/* Main CSS File - Imports all modules */
+
+/* Base Styles */
+@import url("./base/base.css");
+@import url("./base/typography.css");
+
+/* Layout Styles */
+@import url("./layout/navbar.css");
+@import url("./layout/hero.css");
+@import url("./layout/sections.css");
+@import url("./layout/footer.css");

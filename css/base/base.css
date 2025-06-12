@@ -1,0 +1,57 @@
+/* Base styles for the entire application */
+
+html,
+body {
+  overflow-x: hidden;
+  color: #000;
+}
+
+label {
+  color: black;
+}
+
+progress {
+  margin-bottom: 0px !important;
+}
+
+/* Custom container overrides for Bulma */
+.container {
+  max-width: 1440px !important; /* Wider max-width */
+  padding: 0 4rem !important; /* Reduced default padding */
+  margin: 0 auto !important; /* Center the container */
+  width: 100% !important; /* Ensure full width is used */
+}
+
+@media screen and (min-width: 1408px) {
+  .container {
+    padding: 0 3rem !important;
+    max-width: 1440px !important;
+  }
+}
+
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+  .container {
+    padding: 0 2rem !important;
+    max-width: 1152px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+  .container {
+    padding: 0 1rem !important;
+    max-width: 960px !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .container {
+    padding: 0 0.5rem !important;
+  }
+}
+
+/* Responsive container layouts */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 0rem !important;
+  }
+}

@@ -20,9 +20,315 @@
 
     <link rel="stylesheet" href="./css/main.css" />
 </head>
-<body>
+<body class="has-text-black">
     <main>
+      <section class="hero-section">
+        <header>
+          <div id="navbar-placeholder" class="container">
+            <!-- Navigation Bar - Dynamically loaded -->
+          </div>
+        </header>
 
+        <!-- Hero Content: Title, description, CTA, small product images -->
+        <div class="px-3 hero-content container">
+          <div class="columns is-multiline is-desktop">
+            <div class="column is-6">
+              <div class="is-flex is-flex-direction-column">
+                <h1 class="block is-size-1">Calze<br class="is-hidden-tablet" />Mania</h1>
+                <p class="block">
+                  Discover a world where every step is an expression of your unique personality: explore our collection of high-quality, colorful socks designed to bring joy, creativity, and a touch of unexpected fun to your everyday style.
+                </p>
+                <div class="columns">
+                  <div class="column is-one-third">
+                    <a href="shop.html">
+                      <button class="button has-background-white has-text-black is-rounded">Buy now</button>
+                    </a>
+                  </div>
+                </div>
+                <div class="columns is-mobile">
+                  <div class="column">
+                    <figure class="image is-96x96-mobile is-128x128">
+                      <img src="./assets/images/Calcetin-1.png" alt="Image 1" />
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <figure class="image is-96x96-mobile is-128x128">
+                      <img src="./assets/images/Calcetin-2.png" alt="Image 2" />
+                    </figure>
+                  </div>
+                  <div class="column">
+                    <figure class="image is-96x96-mobile is-128x128">
+                      <img src="./assets/images/Calcetin-3.png" alt="Image 3" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-6">
+              <div class="is-flex is-justify-content-center">
+                <figure class="image is-256x256-mobile">
+                  <img src="./assets/images/Calcetin-1.png" />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="red-circle"></div>
+        </div>
+      </section>
+
+       <!-- Best Seller Section -->
+      <section class="section has-background-green">
+        <div class="container has-text-centered mb-5">
+          <h2 class="title is-2 mb-5">Best seller</h2>
+          <p class="subtitle is-4 has-text-black">Discover the socks everyone wants.</p>
+        </div>
+                <!-- Container for dynamically loaded best seller product cards -->
+        <div class="columns is-multiline mt-5" id="best-seller-list"></div>
+        <!-- Container for additional cards shown when 'See more' is clicked -->
+        <div class="columns is-multiline is-hidden" id="more-cards-row"></div>
+        <!-- 'See more' button -->
+        <div class="container has-text-right mt-5" id="see-more-container">
+          <button class="button is-text is-size-4 has-text-weight-bold has-text-black" id="see-more-button">
+            See more
+          </button>
+        </div>
+      </section>
+
+      <!-- "Don't know what to do?" Section -->
+      <section class="section has-background-red">
+        <h2 class="title is-2 mb-5 has-text-centered">Don't know what to do?</h2>
+        <div class="columns is-centered is-vcentered is-align-items-stretch">
+          <!-- Promo Box 1: Explore Products -->
+          <div class="column is-5 is-flex">
+            <div class="columns is-gapless">
+              <div
+                class="column is-half is-flex is-flex-direction-column is-justify-content-center is-align-items-flex-start"
+                style="background-color: #29abe2; padding: 1rem !important"
+              >
+                <h3 class="title is-3 has-text-black promo-box-title">You can explore and discover all our products</h3>
+                <button class="button is-rounded has-background-white has-text-black has-text-weight-bold">
+                  <a href="shop.html" class="hover-white">Buy Now</a>
+                </button>
+              </div>
+              <div class="column is-half is-flex" style="background-color: #f0f0f0">
+                <figure class="image is-fullheight">
+                  <img
+                    src="./assets/images/granitesquare.jpg"
+                    loading="lazy"
+                    alt="Explore products socks collage"
+                    class="promo-image"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- Promo Box 2: Discover Calzemania -->
+          <div class="column is-5 is-flex">
+            <div class="columns is-gapless" style="height: 100%">
+              <div
+                class="column is-half p-5 is-flex is-flex-direction-column is-justify-content-center is-align-items-flex-start"
+                style="background-color: #f7a8b8; padding: 1rem !important"
+              >
+                <h3 class="title is-3 has-text-black promo-box-title">You can discover how Calzemania was born</h3>
+                <button class="button is-rounded has-background-white has-text-black has-text-weight-bold">
+                  <a href="about.html" class="hover-white">Read about us</a>
+                </button>
+              </div>
+              <div class="column is-half is-flex" style="background-color: #f0f0f0">
+                <figure class="image is-fullheight">
+                  <img
+                    src="./assets/images/cloudsofaseater.jpg"
+                    alt="Discover Calzemania socks collage"
+                    class="promo-image"
+                    loading="lazy"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mood Collection Section -->
+      <section class="section has-background-white mt-5 mood-section">
+        <h2 class="title is-2 mb-5 has-text-left">Choose your mood <br />and feel the new <br />collection</h2>
+        <!-- Placeholder for spacing -->
+        <div style="height: 400px"></div>
+        <!-- Link to shop page -->
+        <div class="container has-text-right mt-5">
+          <a class="button is-text is-size-4 has-text-weight-bold has-text-black" id="see-more-button" href="shop.html"
+            >See all collections</a
+          >
+        </div>
+      </section>
+
+      <!-- Mood Image Grid -->
+      <div>
+        <div class="columns is-gapless is-multiline is-centered">
+          <!-- Individual mood images -->
+          <div class="column is-one-quarter">
+            <figure class="image mood-image-col mood-image-1">
+              <img
+                src="./assets/images/Leonardo_Phoenix_Design_a_collection_of_quirky_and_colorful_so_0.png"
+                alt="Mood Sock 1"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+          <div class="column is-one-quarter">
+            <figure class="image mood-image-col mood-image-2">
+              <img
+                src="./assets/images/Leonardo_Phoenix_Design_a_collection_of_quirky_and_colorful_so_1.png"
+                alt="Mood Sock 2"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+          <div class="column is-one-quarter mood-image-col mood-image-3">
+            <figure class="image mood-image-col mood-image-3">
+              <img
+                src="./assets/images/Leonardo_Phoenix_Design_a_collection_of_quirky_and_colorful_so_2.png"
+                alt="Mood Sock 3"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+          <div class="column is-one-quarter">
+            <figure class="image mood-image-col mood-image-4">
+              <img
+                src="./assets/images/Leonardo_Phoenix_Design_a_collection_of_quirky_and_colorful_so_3.png"
+                alt="Mood Sock 4"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <section class="section contact-section has-background-pink">
+        <div class="container">
+          <h2 class="title is-2 mb-6 has-text-left">Contact us</h2>
+          <div class="columns">
+            <!-- Contact Information (Address, Phone, Hours) -->
+            <div class="column is-half contact-info">
+              <div class="mb-5">
+                <p class="is-size-4 has-text-weight-bold mb-2">
+                  <span class="icon mr-2">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </span>
+                  Address
+                </p>
+                <p>Sock Lane, 123, Sockington 28013, Spain</p>
+              </div>
+              <div class="mb-5">
+                <p class="is-size-4 has-text-weight-bold mb-2">
+                  <span class="icon mr-2">
+                    <i class="fas fa-phone-alt"></i>
+                  </span>
+                  Phone
+                </p>
+                <p>Mobile: +(34) 678-901-234</p>
+                <p>Direct line: +(34) 901-234-567</p>
+              </div>
+              <div>
+                <p class="is-size-4 has-text-weight-bold mb-2">
+                  <span class="icon mr-2">
+                    <i class="fas fa-clock"></i>
+                  </span>
+                  Business Hours
+                </p>
+                <p>Monday to Friday: 9:00 AM - 10:00 PM</p>
+                <p>Saturday and Sunday: 9:00 AM - 9:00 PM</p>
+              </div>
+            </div>
+            <!-- Contact Form -->
+            <form class="column is-half contact-form" id="home-contact-form">
+              <div class="field mb-5">
+                <label class="label has-text-black">Name*</label>
+                <div class="control">
+                  <input class="input custom-input is-large" type="text" placeholder="Abc" required id="contact-name" />
+                </div>
+              </div>
+              <div class="field mb-5">
+                <label class="label has-text-black">E-mail*</label>
+                <div class="control">
+                  <input
+                    class="input custom-input is-large"
+                    type="email"
+                    placeholder="Abc@def.com"
+                    required
+                    id="contact-email"
+                  />
+                </div>
+              </div>
+              <div class="field mb-5">
+                <label class="label has-text-black">Object</label>
+                <div class="control">
+                  <input
+                    class="input custom-input is-large"
+                    type="text"
+                    placeholder="This is optional"
+                    id="contact-object"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label has-text-black">Message*</label>
+                <div class="control">
+                  <textarea
+                    class="textarea custom-input"
+                    placeholder="I would like to ask about"
+                    required
+                    id="contact-message"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="field is-grouped is-grouped-right">
+                <div class="control">
+                  <button
+                    type="submit"
+                    class="button has-background-white has-text-black is-rounded"
+                    id="contact-submit"
+                  >
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section (Free Shipping, Returns, Secure Payment) -->
+      <section class="section has-background-blue">
+        <div class="container">
+          <div class="columns has-text-black">
+            <!-- Feature 1: Free Shipping -->
+            <div class="column">
+              <h3 class="title is-4 has-text-black has-text-weight-bold">Free Shipping</h3>
+              <p>Enjoy free shipping on all orders over €30, delivered right to your door.</p>
+            </div>
+            <!-- Feature 2: 90-Day Return -->
+            <div class="column">
+              <h3 class="title is-4 has-text-black has-text-weight-bold">90-Day Return</h3>
+              <p>Hassle-free returns within 90 days, ensuring you're completely satisfied with your purchase.</p>
+            </div>
+            <!-- Feature 3: Secure Payment -->
+            <div class="column">
+              <h3 class="title is-4 has-text-black has-text-weight-bold">Secure Payment</h3>
+              <p>100% secure payment, also available via Apple Pay and PayPal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="section has-background-white footer-section pt-6 pb-6">
+        <div id="footer-placeholder">
+          <!-- Footer will be dynamically loaded here -->
+        </div>
+      </footer>
     </main>
 
     <!-- JavaScript Libraries -->

@@ -1,0 +1,28 @@
+/* This file contains the CSS styles for the typography. */
+body, input, textarea, select, button, p {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title, .navbar-item {
+  font-family: "Dela Gothic One", cursive;
+  letter-spacing: 0.02em;
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+strong {
+  color: black;
+}
+
+.has-text-poppins {
+  font-family: "Poppins", sans-serif !important;
+}
