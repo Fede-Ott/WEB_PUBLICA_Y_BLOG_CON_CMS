@@ -1,0 +1,76 @@
+.is-transparent {
+  background-color: transparent !important;
+}
+
+.has-text-red {
+  color: red;
+}
+
+.has-background-pink {
+  background-color: #f2a0c6;
+}
+
+.has-background-yellow {
+  background-color: #f2a71b;
+}
+
+.has-background-green {
+  background-color: #0d9822;
+}
+
+/* Green background color for the banner and navbar */
+.has-background-green-2 {
+  background-color: #47c85a !important;
+}
+
+.has-background-red {
+  background-color: #f23e0c;
+}
+
+.has-background-blue {
+  background-color: #35aaf2;
+}
+
+.logo-image {
+  height: 70px;
+  width: 70px;
+  object-fit: contain;
+}
+
+.label {
+  color: black !important;
+}
+
+.terms-link {
+  text-decoration: underline;
+  color: black; /* Ensure link color */
+  font-weight: 600;
+}
+
+.has-gap-1 {
+  gap: 1rem;
+}
+.has-gap-2 {
+  gap: 2rem;
+}
+.has-gap-3 {
+  gap: 3rem !important;
+}
+.has-gap-4 {
+  gap: 4rem;
+}
+
+.hover-white {
+  color: black !important;
+}
+
+.hover-white:hover {
+  color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+  .is-flex-direction-column-mobile {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

@@ -9,3 +9,15 @@
 @import url("./layout/hero.css");
 @import url("./layout/sections.css");
 @import url("./layout/footer.css");
+
+/* Component Styles */
+@import url("./components/button.css");
+@import url("./components/card.css");
+@import url("./components/forms.css");
+
+
+/* Page-Specific Styles */
+@import url("./pages/index.css");
+
+/* Utility Styles */
+@import url("./utils/helpers.css");

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="has-background-white">
-<head>
+  <head>
     <!-- Meta tags, title, and links to CSS/JS libraries -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,10 +17,9 @@
       href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/main.css" />
-</head>
-<body class="has-text-black">
+  </head>
+  <body class="has-text-black">
     <main>
       <section class="hero-section">
         <header>
@@ -76,13 +75,13 @@
         </div>
       </section>
 
-       <!-- Best Seller Section -->
+      <!-- Best Seller Section -->
       <section class="section has-background-green">
         <div class="container has-text-centered mb-5">
           <h2 class="title is-2 mb-5">Best seller</h2>
           <p class="subtitle is-4 has-text-black">Discover the socks everyone wants.</p>
         </div>
-                <!-- Container for dynamically loaded best seller product cards -->
+        <!-- Container for dynamically loaded best seller product cards -->
         <div class="columns is-multiline mt-5" id="best-seller-list"></div>
         <!-- Container for additional cards shown when 'See more' is clicked -->
         <div class="columns is-multiline is-hidden" id="more-cards-row"></div>
@@ -336,12 +335,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    
+
+    <!-- Feature Scripts - Non-module versions -->
+    <script src="./js/data/countries.js"></script>
+    <script src="./js/features/animations.js"></script>
+    <script src="./js/features/cartHandler.js"></script>
+    <script src="./js/features/favoritesHandler.js"></script>
+    <script src="./js/features/footerLoader.js"></script>
+    <script src="./js/features/navbarLoader.js"></script>
+    <script src="./js/features/navigation.js"></script>
+    <script src="./js/features/pagination.js"></script>
+
+    <!-- UI Components -->
+    <script src="./js/ui/footer.js"></script>
+    <script src="./js/ui/navbar.js"></script>
 
     <!-- Page-specific scripts -->
     <script src="./js/pages/homePageLogic.js"></script>
-    
-    <!-- Custom JavaScript -->
-     <script src="./js/main-local.js"></script>
-</body>
+
+    <!-- Main Application Script - Non-module version -->
+    <script src="./js/main-local.js"></script>
+  </body>
 </html>

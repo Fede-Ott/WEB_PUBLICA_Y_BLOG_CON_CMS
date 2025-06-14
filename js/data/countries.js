@@ -1,0 +1,20 @@
+// Define countries in global scope instead of exporting
+const countries = [
+  { code: "AF", name: "Afghanistan" },
+  { code: "AL", name: "Albania" },
+  { code: "DZ", name: "Algeria" },
+  { code: "AD", name: "Andorra" },
+  { code: "AO", name: "Angola" },
+  { code: "CA", name: "Canada" },
+  { code: "CN", name: "China" },
+  { code: "FR", name: "France" },
+  { code: "DE", name: "Germany" },
+  { code: "IN", name: "India" },
+  { code: "IT", name: "Italy" },
+  { code: "JP", name: "Japan" },
+  { code: "MX", name: "Mexico" },
+  { code: "ES", name: "Spain" },
+  { code: "GB", name: "United Kingdom" },
+  { code: "US", name: "United States" },
+  { code: "ZW", name: "Zimbabwe" },
+];

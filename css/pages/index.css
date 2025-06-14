@@ -1,0 +1,55 @@
+/* This file contains the CSS styles for the index page. */
+
+.red-circle {
+  position: absolute;
+  bottom: -40%;
+  right: -65%;
+  width: 100%;
+  height: 100%;
+  border-radius: 45%;
+  background-color: #f23e0c;
+  z-index: 0;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+}
+
+.is-250x250 {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.promo-box-title {
+  line-height: 1.5;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .is-256x256-mobile {
+    width: 256px !important;
+    height: 254px !important;
+  }
+
+  .is-256x256-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .is-96x96-mobile {
+    width: 96px !important;
+    height: 96px !important;
+  }
+
+  .is-96x96-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
