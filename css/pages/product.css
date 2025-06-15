@@ -1,0 +1,307 @@
+/* This file contains the CSS styles for the product page. */
+
+.product-thumbnail img {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  height: 128px;
+  width: 128px;
+  object-fit: cover;
+}
+
+.product-thumbnail.is-active img,
+.product-thumbnail:hover img {
+  transform: scale(1.05);
+}
+
+.product-main-image {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.product-image-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #dbdbdb; /* Inactive dot color */
+  margin: 0 4px;
+  cursor: pointer;
+  border: 2px solid black;
+  transition: background-color 0.6s ease;
+}
+
+.product-image-dots .dot.is-active {
+  background-color: black /* Active dot color */
+}
+
+/* Product page specific breadcrumb styling - not affecting hero breadcrumbs */
+.section.has-background-blue .breadcrumb ul {
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.section.has-background-blue .breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.section.has-background-blue .breadcrumb li a {
+  white-space: normal;
+  word-break: normal;
+  hyphens: auto;
+}
+
+/* Star Rating & Divider */
+.star-rating .icon {
+  color: #ffd600;
+}
+
+.vertical-divider {
+  border-left: 2px solid black;
+  height: 2em; /* Adjust height as needed */
+  display: inline-block;
+  margin: 0em 1em; /* Adjust spacing as needed */
+}
+
+.size-button {
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 0.25em 0.5em;
+  background-color: white;
+  color: black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.size-buttons .button.is-black {
+  background-color: #0a0a0a; /* Or your specific black color */
+  color: white;
+  border-color: #0a0a0a;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 0.5em 1em;
+  justify-content: center;
+}
+
+.quantity-container .input {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Match button height */
+  box-shadow: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.input-product {
+  width: 50px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+}
+
+.add-to-cart-button {
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  padding: 0.5em 1em;
+  height: 70px;
+}
+
+.add-to-cart-button:hover {
+  color: white;
+}
+
+/* Product Details List Styling */
+.product-details-list {
+  list-style-type: disc; /* Or use 'circle', 'square', etc. */
+  padding-left: 20px; /* Adjust indentation as needed */
+  margin-bottom: 1.5rem; /* Add some space below the list */
+}
+
+.product-details-list li {
+  margin-bottom: 1.5rem;
+  font-size: 1.1em; /* Slightly larger font size */
+  font-weight: bold; /* Medium weight for details */
+}
+
+.product-details-list .sub-detail {
+  display: block; /* Make sub-detail appear on a new line */
+  font-size: 0.9em; /* Slightly smaller font size */
+  font-weight: normal; /* Regular weight for sub-detail */
+  margin-left: 5px; /* Indent sub-detail slightly */
+  margin-top: 0.25rem; /* Add a little space above the sub-detail */
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
+  /* Mobile breadcrumb improvements - product page specific */
+  .section.has-background-blue .breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section.has-background-blue .breadcrumb li:not(:last-child) {
+    flex-shrink: 0; /* Prevent Home/Shop from shrinking */
+  }
+  
+  .section.has-background-blue .breadcrumb li.is-active {
+    flex-basis: 100%; /* Force the active item to a new line */
+    margin-top: 0.5rem; /* Add space between the lines */
+    display: flex;
+    align-items: center;
+  }
+  
+  .section.has-background-blue .breadcrumb li.is-active .vertical-divider {
+    display: none; /* Hide the divider on mobile for cleaner layout */
+  }
+  
+  .section.has-background-blue .breadcrumb li.is-active a {
+    word-break: break-word; /* Allow long product names to break properly */
+    max-width: 100%; /* Ensure text doesn't overflow */
+  }
+
+  /* Mobile product thumbnails */
+  .product-thumbnail img {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    height: 96px;
+    width: 96px;
+    object-fit: cover;
+  }
+  
+  /* Add spacing between mobile thumbnails if needed */
+  .is-flex.is-flex-wrap-wrap .product-thumbnail {
+    margin: 0 5px 10px;
+  }
+  
+  .vertical-divider {
+    height: 1.2em; /* Reduce height on mobile */
+    margin: 0 0.5em; /* Reduce margin on mobile */
+  }
+}
+
+/* Product Info Section Image Styling */
+.product-info-section .product-info-image-figure {
+  height: 100%; /* Make figure take full column height */
+  border: 2px solid black; /* Optional: Add border to figure */
+  border-radius: 20px; /* Optional: Add border-radius if desired */
+}
+
+.product-info-section .product-info-image-figure img {
+  height: 100%; /* Make image fill the figure height */
+  width: 100%; /* Make image fill the figure width */
+  object-fit: cover; /* Cover the area, cropping if necessary */
+  border-radius: 20px; /* Optional: Add border-radius if desired */
+}
+
+/* Product Actions Container Layout (Default: Desktop) */
+.product-actions-container {
+  flex-direction: row;
+  align-items: center;
+}
+
+.product-action-heart {
+  position: unset !important; /* Reset potential absolute positioning */
+  align-self: center; /* Center vertically in flex row */
+}
+
+/* Custom Responsive Helpers for Product Page */
+@media screen and (max-width: 1260px) {
+  .is-hidden-until-1260 {
+    display: none !important;
+  }
+
+  .product-actions-container { /* Mobile/Tablet layout */
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .product-actions-container .quantity-container {
+    justify-content: center; /* Center quantity controls */
+  }
+
+  .product-actions-container .add-to-cart-button {
+    width: 100%; /* Make button full width */
+  }
+
+  .product-action-heart {
+    margin-left: 0 !important; /* Remove left margin */
+    margin-top: 0.5rem; /* Add some space above heart */
+    align-self: center; /* Center horizontally in flex column */
+  }
+}
+
+@media screen and (min-width: 1261px) {
+  .is-hidden-from-1261 {
+    display: none !important;
+  }
+}
+
+/* Product Tab Styling */
+.product-tabs .column {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.product-tabs .column.is-active span,
+.product-tabs .column.is-active h3 {
+  font-weight: 700;
+}
+
+.product-tabs .column:hover {
+  opacity: 0.8;
+}
+
+.product-tabs .pointer {
+  cursor: pointer;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.is-active {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Review Styling */
+.reviews-tab .star-rating {
+  color: #ffc107;
+}
+
+.box {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle.is-4.has-text-black {
+  margin-bottom: 2rem;
+}
