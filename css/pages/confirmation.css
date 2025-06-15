@@ -1,0 +1,91 @@
+/* Styles specific to the confirmation page */
+
+/* Step circles with checkmarks */
+.steps-complete {
+  margin: 2rem 0;
+}
+
+.step-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.step-line {
+  flex: 1;
+  height: 2px;
+  background-color: black;
+  margin: 0 10px;
+}
+
+/* Product cards in the confirmation section */
+.confirmation-product-card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-product-card .favorite-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  background-color: white;
+  border: none;
+}
+
+/* Make the product card images fit correctly */
+.confirmation-product-card .card-image {
+  overflow: hidden;
+}
+
+.confirmation-product-card img {
+  object-fit: contain;
+  background-color: white;
+}
+
+/* Success Message styling */
+.confirmation-section h1.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-section .subtitle {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .confirmation-section h1.title {
+    font-size: 2rem;
+  }
+
+  .steps-complete {
+    margin: 1rem 0;
+  }
+
+  .confirmation-section .columns.is-centered {
+    margin-top: 2rem !important;
+  }
+}

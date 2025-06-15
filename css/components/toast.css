@@ -1,0 +1,25 @@
+#toast-notification {
+  max-width: 80%; /* Allow the toast to take up more width */
+  width: auto; /* Let width adjust to content, up to max-width */
+  white-space: normal; /* Allow text to wrap */
+  /* Override button padding if necessary, or adjust as needed */
+  padding: 0.75rem 1.5rem; 
+  /* Ensure height adjusts to content */
+  height: auto; 
+  /* Adjust positioning if needed */
+  bottom: 20px; /* Keep it visible initially for styling, animation handles final position */
+  /* Ensure flex alignment works well with wrapped text */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Keep icon to the right */
+  border-radius: 20px; /* Reduce the roundness */
+}
+
+#toast-notification .toast-message {
+  flex-grow: 1; /* Allow message to take available space */
+  margin-right: 0.5rem; /* Add some space between text and icon */
+}
+
+#toast-notification .icon i {
+  font-size: 1.5em; /* Make the icon bigger */
+}

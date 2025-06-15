@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="has-background-yellow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - CalzeManía</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar-placeholder" class="container">
+        <!-- Navigation Bar - Dynamically loaded -->
+      </div>
+    </header>
+    <main>
+      <!-- Checkout Hero Section -->
+      <section class="hero is-medium checkout-hero-section mt-5">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title is-1-desktop is-3-mobile has-text-black">Checkout</h1>
+            <nav class="breadcrumb is-centered has-text-black" aria-label="breadcrumbs">
+              <ul>
+                <li><a href="index.html" class="is-underlined">Home</a></li>
+                <li><a href="#" class="is-underlined">Cart</a></li>
+                <li class="is-active"><a href="#" aria-current="page" class="has-text-black">Checkout</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <!-- Checkout Main Content -->
+      <section class="section checkout-main-section has-background-yellow pb-6">
+        <div class="container">
+          <!-- Progress Indicator (Moved outside column structure) -->
+          <div class="checkout-progress mb-6">
+            <div class="step is-active" data-step="1">
+              <div class="step-circle">
+                <span class="step-number">1</span>
+                <span class="step-tick"><i class="fas fa-check"></i></span>
+              </div>
+              <div class="step-label">Billing</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="2">
+              <div class="step-circle">
+                <span class="step-number">2</span>
+                <span class="step-tick"><i class="fas fa-check"></i></span>
+              </div>
+              <div class="step-label">Payment</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="3">
+              <div class="step-circle">
+                <span class="step-number">3</span>
+                <span class="step-tick"><i class="fas fa-check"></i></span>
+              </div>
+              <div class="step-label">Resume</div>
+            </div>
+          </div>
+
+          <div class="columns is-variable is-8">
+            <!-- Billing Details Form (Progress Indicator removed from here) -->
+            <div class="column is-two-thirds">
+              <h2 class="title is-3 mb-5">Billing details</h2>
+              <form id="billing-form">
+                <!-- First Name and Last Name -->
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">First Name*</label>
+                      <div class="control">
+                        <input class="input custom-input is-large" type="text" placeholder="Abc" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Last Name*</label>
+                      <div class="control">
+                        <input class="input custom-input is-large" type="text" placeholder="Abc" required />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Address Fields -->
+                <div class="field">
+                  <label class="label has-text-black">Country / Region*</label>
+                  <div class="control">
+                    <div class="select is-fullwidth is-large custom-select-wrapper">
+                      <select class="custom-input" required id="country-region-select">
+                        <!-- Countries generated dynamically -->
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-black">Street Address*</label>
+                  <div class="control">
+                    <input class="input custom-input is-large" type="text" placeholder="" required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-black">Town / City*</label>
+                  <div class="control">
+                    <input class="input custom-input is-large" type="text" placeholder="" required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-black">Province*</label>
+                  <div class="control">
+                    <input class="input custom-input is-large" type="text" placeholder="" required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-black">ZIP Code*</label>
+                  <div class="control">
+                    <input class="input custom-input is-large" type="text" placeholder="" required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-black">Phone*</label>
+                  <div class="control">
+                    <input class="input custom-input is-large" type="tel" placeholder="" required />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label has-text-black">Email*</label>
+                  <div class="control">
+                    <input class="input custom-input is-large" type="email" placeholder="" required />
+                  </div>
+                </div>
+
+                <div class="field is-grouped is-grouped-right mt-5">
+                  <div class="control">
+                    <button type="submit" class="button has-background-white has-text-black is-rounded is-medium">
+                      Next step
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="column is-one-third">
+              <div class="box order-summary-box">
+                <h3 class="title is-4 mb-4">Order summary</h3>
+                <hr />
+
+                <div id="order-summary-items">
+                  <!-- Items will be loaded here by JS -->
+                </div>
+
+                <hr />
+
+                <div class="level is-mobile">
+                  <div class="level-left">
+                    <p class="is-size-7 has-text-black">Standard shipping <br /><span>(5 to 7 business days)</span></p>
+                  </div>
+                  <div class="level-right">
+                    <p class="is-size-7 has-text-weight-semibold has-text-black" id="shipping-cost">€4.99</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="level is-mobile">
+                  <div class="level-left">
+                    <p class="is-size-7 has-text-black">Points Loyalty Program</p>
+                  </div>
+                  <div class="level-right">
+                    <p class="is-size-7 has-text-weight-semibold has-text-black" id="loyalty-points">0 pt</p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="level is-mobile">
+                  <div class="level-left">
+                    <p class="is-size-5 has-text-weight-bold has-text-black">Total</p>
+                  </div>
+                  <div class="level-right">
+                    <p class="is-size-5 has-text-weight-bold has-text-black" id="total-cost">€0.00</p>
+                  </div>
+                </div>
+                <hr />
+
+                <button
+                  class="button is-fullwidth has-background-white has-text-black is-rounded is-medium mt-5"
+                  disabled
+                >
+                  Place order
+                </button>
+                <!-- Disabled initially -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features/Benefits Section -->
+      <section class="section has-background-blue">
+        <div class="container">
+          <div class="columns has-text-black">
+            <!-- Feature 1: Free Shipping -->
+            <div class="column">
+              <h3 class="title is-4 has-text-black has-text-weight-bold">Free Shipping</h3>
+              <p>Enjoy free shipping on all orders over €30, delivered right to your door.</p>
+            </div>
+            <!-- Feature 2: 90-Day Return -->
+            <div class="column">
+              <h3 class="title is-4 has-text-black has-text-weight-bold">90-Day Return</h3>
+              <p>Hassle-free returns within 90 days, ensuring you're completely satisfied with your purchase.</p>
+            </div>
+            <!-- Feature 3: Secure Payment -->
+            <div class="column">
+              <h3 class="title is-4 has-text-black has-text-weight-bold">Secure Payment</h3>
+              <p>100% secure payment, also available via Apple Pay and PayPal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="section has-background-white footer-section pt-6 pb-6">
+        <div id="footer-placeholder">
+          <!-- Footer will be dynamically loaded here -->
+        </div>
+      </footer>
+    </main>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <!-- Feature Scripts - Non-module versions -->
+    <script src="./js/data/countries.js"></script>
+    <script src="./js/data/products.js"></script>
+    <script src="./js/features/animations.js"></script>
+    <script src="./js/features/cartHandler.js"></script>
+    <script src="./js/features/favoritesHandler.js"></script>
+    <script src="./js/features/footerLoader.js"></script>
+    <script src="./js/features/navbarLoader.js"></script>
+    <script src="./js/features/navigation.js"></script>
+    <script src="./js/features/pagination.js"></script>
+
+    <!-- UI Components -->
+    <script src="./js/ui/cartItem.js"></script>
+    <script src="./js/ui/cartModal.js"></script>
+    <script src="./js/ui/checkoutResume.js"></script>
+    <script src="./js/ui/favoriteProduct.js"></script>
+    <script src="./js/ui/favoritesModal.js"></script>
+    <script src="./js/ui/footer.js"></script>
+    <script src="./js/ui/navbar.js"></script>
+    <script src="./js/ui/orderSummaryItem.js"></script>
+    <script src="./js/ui/paymentForm.js"></script>
+    <script src="./js/ui/processingLoader.js"></script>
+    <script src="./js/ui/productCard.js"></script>
+    <script src="./js/ui/toastNotification.js"></script>
+
+    <!-- Page-specific scripts -->
+    <script src="./js/pages/checkoutPageLogic.js"></script>
+
+    <!-- Main Application Script - Non-module version -->
+    <script src="./js/main-local.js"></script>
+  </body>
+</html>

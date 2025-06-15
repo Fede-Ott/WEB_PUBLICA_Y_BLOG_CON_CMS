@@ -1,0 +1,34 @@
+/* Styles for the resume view */
+
+.resume-details {
+  margin-bottom: 1.5rem;
+}
+
+.resume-details h3 {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem; /* Slightly larger heading */
+}
+
+.resume-details p {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+  display: flex; /* Use flexbox for label-value pairs */
+}
+
+.resume-details strong {
+  font-weight: bold;
+  margin-right: 4px; /* Small gap between label and value */
+}
+
+/* Masked card number */
+.masked-card-number {
+  font-family: monospace; /* Optional: Use monospace for consistent spacing */
+}
+
+/* Resume Navigation Buttons */
+.resume-nav-buttons {
+  display: flex;
+  justify-content: space-between; /* Space out buttons */
+  margin-top: 2rem;
+}

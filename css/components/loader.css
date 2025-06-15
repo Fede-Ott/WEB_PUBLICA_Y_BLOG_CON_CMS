@@ -1,0 +1,79 @@
+/* Processing Order Loader Styles */
+
+.processing-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  padding: 0 20px; /* Add padding for text on small screens */
+}
+
+.processing-loader.is-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* No scroll class for body to prevent background scrolling */
+body.no-scroll {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.processing-loader-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  text-align: center; /* Center text */
+  width: 100%; /* Allow text to take available width */
+  max-width: 90%; /* Prevent text from touching the edges */
+}
+
+.processing-loader-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(1em);
+}
+
+.processing-loader-icon {
+  font-size: 3rem;
+  color: #47c85a; /* Same green color used in confirmation page */
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
+  .processing-loader-text {
+    font-size: 1.3rem; /* Smaller font size on mobile */
+    margin-bottom: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .processing-loader-icon {
+    font-size: 2.5rem; /* Slightly smaller icon on mobile */
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

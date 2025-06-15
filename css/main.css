@@ -17,12 +17,18 @@
 @import url("./components/promo-box.css");
 @import url("./components/favorites-modal.css");
 @import url("./components/cart-modal.css");
+@import url("./components/order-summary.css");
+@import url("./components/resume-view.css");
+@import url("./components/loader.css");
+@import url("./components/toast.css");
 
 
 /* Page-Specific Styles */
 @import url("./pages/index.css");
 @import url("./pages/shop.css");
 @import url("./pages/product.css");
+@import url("./pages/checkout.css");
+@import url("./pages/confirmation.css");
 
 /* Utility Styles */
 @import url("./utils/helpers.css");
