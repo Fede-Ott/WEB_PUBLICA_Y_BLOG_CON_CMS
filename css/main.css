@@ -21,6 +21,7 @@
 
 /* Page-Specific Styles */
 @import url("./pages/index.css");
+@import url("./pages/shop.css");
 
 /* Utility Styles */
 @import url("./utils/helpers.css");

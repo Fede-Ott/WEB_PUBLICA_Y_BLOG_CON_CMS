@@ -1,0 +1,86 @@
+/* This file contains the CSS styles for the shop page. */
+
+.shop-hero {
+  background-image: url("../../assets/images/shopbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Fix for dropdowns appearing under product cards */
+.shop-controls .dropdown {
+  position: relative;
+  z-index: 30; /* Higher z-index to ensure dropdowns appear above other elements */
+}
+
+.shop-controls .dropdown-menu {
+  z-index: 31; /* Ensure dropdown content is above everything */
+}
+
+.shop-controls .button:hover {
+  background-color: black !important;
+  color: white !important;
+}
+
+.shop-controls .button:hover span {
+  color: white !important;
+}
+
+.breadcrumb li + li::before {
+  content: ">";
+  padding: 0 0.5em;
+  color: inherit;
+}
+
+.pagination-container {
+  display: flex;
+  align-items: center;
+}
+
+.pagination-previous {
+  order: 1;
+}
+
+.pagination-list {
+  order: 2;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown-item.is-active {
+  background-color: #eee;
+  font-weight: bold;
+  color: #363636;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .pagination-previous {
+    order: 2;
+    margin-bottom: 1rem;
+  }
+  .pagination-next {
+    order: 3;
+    margin-top: 1rem;
+  }
+  .pagination-list {
+    order: 1;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .pagination-previous,
+  .pagination-next {
+    flex-grow: 1;
+    margin: 0 0.5rem;
+  }
+
+  .shop-controls {
+    margin: 0 1rem;
+  }
+}
