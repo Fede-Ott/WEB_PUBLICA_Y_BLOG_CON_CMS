@@ -38,7 +38,7 @@ function generateNavbarHTML(backgroundColor = "has-background-yellow") {
         </div>
         <!-- Right side icons -->
         <div class="navbar-end">
-          <a class="navbar-item has-text-black" href="blog.html">
+          <a class="navbar-item has-text-black" href="https://calzemania.cargo.site/">
             <span class="icon is-medium">
               <i class="fas fa-newspaper"></i>
             </span>

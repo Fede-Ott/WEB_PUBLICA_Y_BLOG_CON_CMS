@@ -19,7 +19,7 @@ function generateFooterHTML() {
           <ul>
             <li><a href="shop.html" class="has-text-black has-text-weight-semibold">Shop</a></li>
             <li><a href="about.html" class="has-text-black has-text-weight-semibold">About</a></li>
-            <li><a href="blog.html" class="has-text-black has-text-weight-semibold" id="footer-wishlist">Blog</a></li>
+            <li><a href="https://calzemania.cargo.site/" class="has-text-black has-text-weight-semibold" id="footer-wishlist">Blog</a></li>
             <li><a href="account.html" class="has-text-black has-text-weight-semibold">Account</a></li>
           </ul>
         </div>

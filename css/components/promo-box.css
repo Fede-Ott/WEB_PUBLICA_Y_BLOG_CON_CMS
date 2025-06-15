@@ -1,0 +1,16 @@
+/* This file contains the CSS styles for the promo box component. */
+
+.promo-image {
+  height: 100% !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Ensure promo box titles are visible */
+.promo-box-title {
+  position: relative;
+  z-index: 5;
+  margin-bottom: 1rem;
+  visibility: visible !important;
+  opacity: 1 !important;
+}

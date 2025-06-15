@@ -1,0 +1,90 @@
+/* Styles for the Shopping Cart Modal */
+
+.cart-modal .modal-content {
+  max-width: 400px; /* Adjust width as needed */
+  width: 90%;
+}
+
+.cart-modal .box {
+  border-radius: 20px; /* Rounded corners for the modal box */
+  border: 2px solid black;
+}
+
+.cart-modal .delete.cart-close-button {
+  background-color: #dbdbdb; /* Grey background for close button */
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.cart-modal .delete.cart-close-button::before,
+.cart-modal .delete.cart-close-button::after {
+  background-color: black; /* Black 'X' */
+  height: 2px;
+  width: 50%;
+}
+
+.cart-items-container {
+  max-height: 40vh; /* Limit height and allow scrolling */
+  overflow-y: auto;
+  /* Custom scrollbar (optional) */
+  scrollbar-width: thin;
+  scrollbar-color: #dbdbdb transparent;
+}
+
+.cart-items-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-items-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cart-items-container::-webkit-scrollbar-thumb {
+  background-color: #dbdbdb;
+  border-radius: 3px;
+}
+
+
+.cart-item .media-left .image img {
+  border-radius: 8px; /* Slightly rounded images */
+  object-fit: cover;
+}
+
+.cart-item .media-content .content p {
+  line-height: 1.3;
+}
+
+.cart-item .remove-cart-item-button {
+  background-color: #dbdbdb; /* Grey background for remove button */
+  border-radius: 50%;
+}
+
+.cart-item .remove-cart-item-button::before,
+.cart-item .remove-cart-item-button::after {
+  background-color: black; /* Black 'X' */
+}
+
+.cart-divider,
+.cart-item-divider {
+  background-color: black;
+  height: 2px;
+  border: none;
+  margin: 1rem 0;
+}
+
+.cart-item-divider {
+  margin: 0.75rem 0 0 0; /* Adjust spacing for item divider */
+}
+
+.cart-modal .checkout-button {
+  height: auto;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  font-weight: bold;
+}
+
+.cart-empty-message {
+  color: #7a7a7a; /* Grey text for empty message */
+  padding: 2rem 0;
+}

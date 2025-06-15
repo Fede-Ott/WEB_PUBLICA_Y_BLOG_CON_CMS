@@ -1,0 +1,42 @@
+/* This file contains the CSS styles for the favorites modal component. */
+#favorites-modal .modal-card {
+  max-width: 500px; /* Adjust width as needed */
+  width: 90%;
+  border-radius: 20px;
+  border: 2px solid black;
+  overflow: hidden; /* Ensure border-radius applies to children */
+}
+
+#favorites-modal .modal-card-head {
+  border-bottom: 2px solid black; /* Add border below header */
+  padding: 1.5rem;
+}
+
+#favorites-modal .modal-card-title {
+  font-size: 1.5rem; /* Adjust title size */
+}
+
+#favorites-modal .delete {
+  background-color: #dbdbdb; /* Grey background for close button */
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+#favorites-modal .delete::before,
+#favorites-modal .delete::after {
+  background-color: black; /* Black 'X' */
+  height: 2px;
+  width: 50%;
+}
+
+#favorites-modal .modal-card-body {
+  padding: 1.5rem; /* Add padding to the content area */
+  max-height: 60vh; /* Allow scrolling for many items */
+  overflow-y: auto;
+}
+
+#favorites-modal .media-right .remove-favorite-button::before,
+#favorites-modal .media-right .remove-favorite-button::after {
+  background-color: white;
+}
