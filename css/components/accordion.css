@@ -1,0 +1,60 @@
+/* FAQ Accordion Styles */
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-question {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Improve text handling for mobile */
+  white-space: normal; 
+  word-wrap: break-word;
+  text-align: left;
+  line-height: 1.4;
+  padding: 1rem 3rem 1rem 1.5rem; /* Added proper padding in all directions */
+  position: relative;
+  min-height: 60px; /* Minimum height to ensure proper display */
+  overflow: visible; /* Ensure text isn't cut off */
+}
+
+/* Fix for the text span inside the button for proper wrapping */
+.faq-question span:first-child {
+  flex: 1;
+  padding-right: 10px;
+}
+
+/* Make sure the icon stays on the right */
+.faq-question .icon {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-shrink: 0;
+}
+
+.faq-question:hover {
+  background-color: #f8f8f8;
+}
+
+.faq-answer {
+  border: 2px solid black;
+  overflow: hidden;
+  word-wrap: break-word; /* Ensure text in answers also wraps properly */
+}
+
+.faq-item.is-active .faq-question {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+  .faq-question {
+    padding: 1rem 3rem 1rem 1rem; /* Adjust padding for smaller screens */
+    font-size: 0.95rem;
+  }
+  
+  .faq-answer {
+    padding: 1rem !important; /* Override any inline padding on mobile */
+  }
+}

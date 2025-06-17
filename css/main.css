@@ -22,7 +22,7 @@
 @import url("./components/resume-view.css");
 @import url("./components/loader.css");
 @import url("./components/toast.css");
-
+@import url("./components/accordion.css");
 
 /* Page-Specific Styles */
 @import url("./pages/index.css");
