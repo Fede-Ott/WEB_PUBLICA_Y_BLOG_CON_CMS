@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en" class="has-background-red">
+  <head>
+    <!-- Meta tags, title, and links to CSS/JS libraries -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Account - CalzeMania</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/pages/account.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar-placeholder" class="container">
+        <!-- Navigation Bar - Dynamically loaded -->
+      </div>
+    </header>
+    <main>
+      <!-- Account Hero Section -->
+      <section class="hero is-medium account-hero-section mt-5">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title is-1-desktop is-3-mobile has-text-black">Account</h1>
+            <nav class="breadcrumb is-centered has-text-black" aria-label="breadcrumbs">
+              <ul>
+                <li><a href="index.html" class="is-underlined">Home</a></li>
+                <li class="is-active"><a href="#" aria-current="page" class="has-text-black">Account</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <!-- Account Section -->
+      <section class="section has-background-red">
+        <!-- Tabs -->
+        <div class="container">
+          <div class="account-tabs-container">
+            <div class="account-tabs">
+              <div class="tab-item account-tab" data-tab="fidelity-tab">
+                <h3 class="title is-5 has-text-black pointer">Fidelity card</h3>
+              </div>
+              <div class="tab-item account-tab" data-tab="orders-tab">
+                <h3 class="title is-5 has-text-black pointer">My orders</h3>
+              </div>
+              <div class="tab-item account-tab" data-tab="delivery-tab">
+                <h3 class="title is-5 has-text-black pointer">Delivery/Billing details</h3>
+              </div>
+              <div class="tab-item account-tab" data-tab="payment-tab">
+                <h3 class="title is-5 has-text-black pointer">Payment methods</h3>
+              </div>
+              <div class="tab-item account-tab" data-tab="contact-tab">
+                <h3 class="title is-5 has-text-black pointer">Contact information</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Horizontal Divider -->
+        <div class="my-4">
+          <hr class="tab-divider" />
+        </div>
+
+        <!-- Tab Contents Container -->
+        <div class="tab-contents-container">
+          <!-- Fidelity Tab Content -->
+          <div class="container tab-content" id="fidelity-tab">
+            <div class="columns">
+              <!-- First column content -->
+              <div class="column is-half">
+                <div class="is-inline-block">
+                  <img src="assets/images/fidelitycard.png" alt="Fidelity Card" />
+                  <div class="is-flex is-align-items-center is-justify-content-center">
+                    <progress class="progress is-black p-1" value="10" max="100"></progress>
+                    <div
+                      class="p-4 ml-2 is-flex is-align-items-center is-justify-content-center has-background-white has-text-black"
+                      style="width: 2rem; height: 2rem; border-radius: 50%"
+                    >
+                      <span class="has-text-weight-bold is-size-7">10%</span>
+                    </div>
+                  </div>
+                  <p class="has-text-black mt-2">You're only 65 points away from your next 10% voucher!</p>
+                </div>
+              </div>
+              <!-- Second column content -->
+              <div class="column is-half">
+                <div class="is-inline-block content">
+                  <h3 class="title is-4 has-text-black is-uppercase">Hi User!</h3>
+                  <p class="has-text-black">
+                    Join Our Loyalty Program and Get Rewarded Every Step of the Way! At CalzeMania, we believe loyalty
+                    deserves to be celebrated. That's why we created a simple and rewarding Loyalty Program designed
+                    just for you! Here's how it works:
+                  </p>
+                  <ul class="has-text-left">
+                    <li>
+                      <strong>Earn Points with Every Purchase:</strong> For every euro you spend, you'll earn points
+                      that bring you closer to exclusive rewards.
+                    </li>
+                    <li>
+                      <strong>Unlock Exclusive Discounts:</strong> Use your points to get vouchers, including discounts
+                      like 10% off your next order.
+                    </li>
+                    <li>
+                      <strong>Be the First to Know:</strong> Enjoy early access to new collections, limited editions,
+                      and special promotions before anyone else.
+                    </li>
+                    <li>
+                      <strong>Get Rewarded Just for Shopping:</strong> The more you shop, the more you save — it's that
+                      simple!
+                    </li>
+                  </ul>
+                  <p class="has-text-black">
+                    Joining is free, easy, and the rewards are endless. Start collecting points today and turn your love
+                    for socks into savings.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- My Orders Tab Content -->
+          <div class="container tab-content" id="orders-tab">
+            <div class="columns">
+              <div class="column is-full">
+                <!-- Order Cards -->
+                <div class="card has-background-white">
+                  <div class="card-content p-5">
+                    <div class="columns is-vcentered">
+                      <!-- Product Image Column -->
+                      <div class="column is-2">
+                        <figure class="image">
+                          <img
+                            src="assets/images/Calcetin-2.png"
+                            alt="Socks rectangles"
+                            style="max-height: 150px; width: auto"
+                          />
+                        </figure>
+                      </div>
+
+                      <!-- Product Details Column -->
+                      <div class="column is-4">
+                        <h3 class="title is-4 mb-2">Socks rectangles</h3>
+                        <div class="content">
+                          <p class="mb-1"><span>Size: M</span> <span class="ml-4">0 X 15.00€</span></p>
+                          <p class="has-text-weight-bold is-size-5">Total: 4.99€</p>
+                        </div>
+                      </div>
+
+                      <!-- Vertical Divider -->
+                      <div class="vertical-divider is-hidden-mobile" style="height: 8em"></div>
+
+                      <!-- Delivery Info Column -->
+                      <div class="column is-5">
+                        <div class="content has-text-right">
+                          <p class="is-size-5 mb-3">It will arrive on <strong>December 2nd and 3rd</strong>.</p>
+                          <p class="mb-1">Here you can track your package:</p>
+                          <a href="http://www.calzemania.com/track-order" class="is-underlined has-text-black"
+                            >www.calzemania.com/track-order</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Delivery/Billing Details Tab Content -->
+          <div class="container tab-content" id="delivery-tab">
+            <div class="columns">
+              <div class="column is-full">
+                <p class="has-text-black mb-4">The following addresses will be used on the checkout page by default.</p>
+
+                <div class="columns">
+                  <!-- Billing Address Column -->
+                  <div class="column is-half">
+                    <div class="billing-address-container">
+                      <div class="is-flex is-justify-content-space-between mb-3">
+                        <h4 class="title is-5 has-text-black">Billing Address</h4>
+                        <a href="#" class="has-text-warning-dark">Edit info</a>
+                      </div>
+                      <hr class="my-2" style="background-color: #000; height: 1px" />
+                      <div class="address-details mt-4">
+                        <p class="mb-1"><strong>Name:</strong> John Doe</p>
+                        <p class="mb-1"><strong>Country / Region:</strong> United Kingdom</p>
+                        <p class="mb-1"><strong>Street Address:</strong> 123 Sock Lane</p>
+                        <p class="mb-1"><strong>Town / City:</strong> Sockington</p>
+                        <p class="mb-1"><strong>Province:</strong> Greater London</p>
+                        <p class="mb-1"><strong>ZIP Code:</strong> 64020</p>
+                        <p class="mb-1"><strong>Phone:</strong> +44 20 7946 0958</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Shipping Address Column -->
+                  <div class="column is-half">
+                    <div class="shipping-address-container">
+                      <div class="is-flex is-justify-content-space-between mb-3">
+                        <h4 class="title is-5 has-text-black">Shipping Address</h4>
+                        <a href="#" class="has-text-warning-dark">Edit info</a>
+                      </div>
+                      <hr class="my-2" style="background-color: #000; height: 1px" />
+                      <div class="address-details mt-4">
+                        <p class="mb-1"><strong>Name:</strong> John Doe</p>
+                        <p class="mb-1"><strong>Country / Region:</strong> United Kingdom</p>
+                        <p class="mb-1"><strong>Street Address:</strong> 123 Sock Lane</p>
+                        <p class="mb-1"><strong>Town / City:</strong> Sockington</p>
+                        <p class="mb-1"><strong>Province:</strong> Greater London</p>
+                        <p class="mb-1"><strong>ZIP Code:</strong> 64020</p>
+                        <p class="mb-1"><strong>Phone:</strong> +44 20 7946 0958</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment Methods Tab Content -->
+          <div class="container tab-content" id="payment-tab">
+            <div class="columns">
+              <div class="column is-full">
+                <!-- Payment Methods Table -->
+                <div class="payment-methods-container">
+                  <!-- Header Row -->
+                  <div
+                    class="payment-header is-justify-content-space-between is-align-items-center has-background-white is-flex p-5"
+                  >
+                    <div class="payment-column">
+                      <h4 class="title is-5 has-text-black">Name</h4>
+                    </div>
+                    <div class="payment-column">
+                      <h4 class="title is-5 has-text-black">Method</h4>
+                    </div>
+                    <div class="payment-column">
+                      <h4 class="title is-5 has-text-black">Expires</h4>
+                    </div>
+                  </div>
+
+                  <hr class="my-3 has-background-black" style="height: 1px" />
+
+                  <!-- Payment Method Row -->
+                  <div class="payment-row is-flex is-justify-content-space-between is-align-items-center py-4">
+                    <div class="payment-column">
+                      <div
+                        class="default-badge is-inline-block mb-2 has-background-pink p-1"
+                        style="border-radius: 4px"
+                      >
+                        <span class="has-text-white is-size-7">Default Method</span>
+                      </div>
+                      <p class="has-text-black">John Doe</p>
+                    </div>
+                    <div class="payment-column">
+                      <p class="has-text-black">Mastercard ****1234</p>
+                    </div>
+                    <div class="payment-column">
+                      <p class="has-text-black">05/25</p>
+                    </div>
+                  </div>
+
+                  <!-- Add Payment Method Button -->
+                  <div class="is-flex is-justify-content-flex-end mt-5">
+                    <a href="#" class="button is-rounded has-text-black is-transparent">
+                      <span>Add payment method</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Information Tab Content -->
+          <div class="container tab-content" id="contact-tab">
+            <div class="columns">
+              <form id="billing-form">
+                <!-- First Name and Last Name -->
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">First Name*</label>
+                      <div class="control">
+                        <input class="input custom-input is-large" type="text" placeholder="Abc" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Last Name*</label>
+                      <div class="control">
+                        <input class="input custom-input is-large" type="text" placeholder="Abc" required />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Nickname and Email -->
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Nickname*</label>
+                      <div class="control">
+                        <input class="input custom-input is-large" type="text" placeholder="Abc" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Email*</label>
+                      <div class="control">
+                        <input class="input custom-input is-large" type="email" placeholder="Abc" required />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Previous Password and New Password -->
+                <div class="columns">
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Previous Password*</label>
+                      <div class="control">
+                        <input class="input custom-input is-large" type="password" placeholder="Abc" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">New Password*</label>
+                      <div class="control">
+                        <input class="input custom-input is-large" type="password" placeholder="Abc" required />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Confirm Password -->
+                <div class="columns is-vcentered">
+                  <div class="column">
+                    <div class="field">
+                      <label class="label has-text-black">Confirm Password*</label>
+                      <div class="control">
+                        <input class="input custom-input is-large" type="password" placeholder="Abc" required />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="is-flex">
+                      <button
+                        class="button mt-3 is-medium has-background-white has-text-black is-rounded"
+                        type="submit"
+                      >
+                        <span>Save Changes</span>
+                      </button>
+                      <div class="is-flex is-flex-direction-column-mobile">
+                        <div class="control is-flex is-align-items-flex-end ml-4">
+                          <button
+                            class="button is-text is-size-6 has-text-weight-bold has-text-black is-uppercase"
+                            type="button"
+                            id="logout-button"
+                          >
+                            Log out
+                          </button>
+                        </div>
+                        <div class="control is-flex is-align-items-flex-end ml-4">
+                          <button
+                            class="button is-text is-size-6 has-text-weight-bold has-text-black is-uppercase"
+                            type="button"
+                            id="delete-account-button"
+                          >
+                            Delete Account
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Section (Free Shipping, Returns, Secure Payment) -->
+      <section class="section has-background-blue">
+        <div class="container">
+          <div class="columns has-text-black">
+            <!-- Feature 1: Free Shipping -->
+            <div class="column">
+              <h3 class="title is-4 has-text-black has-text-weight-bold">Free Shipping</h3>
+              <p>Enjoy free shipping on all orders over €30, delivered right to your door.</p>
+            </div>
+            <!-- Feature 2: 90-Day Return -->
+            <div class="column">
+              <h3 class="title is-4 has-text-black has-text-weight-bold">90-Day Return</h3>
+              <p>Hassle-free returns within 90 days, ensuring you're completely satisfied with your purchase.</p>
+            </div>
+            <!-- Feature 3: Secure Payment -->
+            <div class="column">
+              <h3 class="title is-4 has-text-black has-text-weight-bold">Secure Payment</h3>
+              <p>100% secure payment, also available via Apple Pay and PayPal.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="section has-background-white footer-section pt-6 pb-6">
+      <div id="footer-placeholder">
+        <!-- Footer will be dynamically loaded here -->
+      </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <!-- Feature Scripts - Non-module versions -->
+    <script src="./js/data/countries.js"></script>
+    <script src="./js/data/products.js"></script>
+    <script src="./js/features/animations.js"></script>
+    <script src="./js/features/cartHandler.js"></script>
+    <script src="./js/features/favoritesHandler.js"></script>
+    <script src="./js/features/footerLoader.js"></script>
+    <script src="./js/features/navbarLoader.js"></script>
+    <script src="./js/features/navigation.js"></script>
+    <script src="./js/features/pagination.js"></script>
+
+    <!-- UI Components -->
+    <script src="./js/ui/cartItem.js"></script>
+    <script src="./js/ui/cartModal.js"></script>
+    <script src="./js/ui/checkoutResume.js"></script>
+    <script src="./js/ui/favoriteProduct.js"></script>
+    <script src="./js/ui/favoritesModal.js"></script>
+    <script src="./js/ui/footer.js"></script>
+    <script src="./js/ui/navbar.js"></script>
+    <script src="./js/ui/orderSummaryItem.js"></script>
+    <script src="./js/ui/paymentForm.js"></script>
+    <script src="./js/ui/processingLoader.js"></script>
+    <script src="./js/ui/productCard.js"></script>
+    <script src="./js/ui/toastNotification.js"></script>
+
+    <!-- Page-specific scripts -->
+    <script src="./js/pages/accountPageLogic.js"></script>
+
+    <!-- Main Application Script -->
+    <script src="./js/main-local.js"></script>
+  </body>
+</html>

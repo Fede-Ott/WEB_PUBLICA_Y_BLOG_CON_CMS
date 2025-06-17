@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="has-background-blue">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account - CalzeManía</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg" />
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar-placeholder" class="container">
+        <!-- Navigation Bar - Dynamically loaded -->
+      </div>
+    </header>
+    <main>
+      <!-- Account Hero Section -->
+      <section class="hero is-medium account-hero-section mt-5">
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="title is-1-desktop is-3-mobile has-text-black">Account</h1>
+            <nav class="breadcrumb is-centered has-text-black" aria-label="breadcrumbs">
+              <ul>
+                <li><a href="index.html" class="is-underlined">Home</a></li>
+                <li class="is-active"><a href="#" aria-current="page" class="has-text-black">Account</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <!-- Account Section -->
+      <section class="section has-background-blue">
+        <div class="columns is-centered">
+          <!-- Login Form -->
+          <div class="column is-5">
+            <div class="p-5 account-form-container">
+              <h2 class="title is-4 mb-5 has-text-poppins has-text-weight-bold">Log In</h2>
+              <form id="login-form" class="is-flex is-flex-direction-column has-gap-2">
+                <div class="field">
+                  <label class="label">Username or email address</label>
+                  <div class="control">
+                    <input
+                      class="input custom-input is-large"
+                      type="text"
+                      id="login-username"
+                      placeholder="Abc or Abc@def.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="field password-field">
+                  <label class="label">Password</label>
+                  <div class="control has-icons-right">
+                    <input
+                      class="input custom-input is-large"
+                      type="password"
+                      id="login-password"
+                      placeholder="Password"
+                      required
+                    />
+                    <span class="icon is-right is-clickable password-toggle">
+                      <i class="fas fa-eye"></i>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="field login-actions">
+                  <div class="remember-me-container">
+                    <label class="checkbox">
+                      <input type="checkbox" id="remember-me" />
+                      Remember me
+                    </label>
+                  </div>
+                  <div class="is-flex is-justify-content-space-between is-align-items-center mt-5">
+                    <div class="forgot-password-container">
+                      <a href="#" class="terms-link" id="forgot-password">Lost your Password?</a>
+                    </div>
+                    <div class="login-button-container">
+                      <button
+                        type="submit"
+                        class="button is-rounded has-background-white has-text-black"
+                        id="login-button"
+                      >
+                        Log In
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Register Form -->
+          <div class="column is-5">
+            <div class="p-5 account-form-container">
+              <h4 class="title is-4 mb-5 has-text-poppins has-text-weight-bold">Register</h4>
+              <form id="register-form" class="is-flex is-flex-direction-column has-gap-2">
+                <div class="field">
+                  <label class="label">Email address</label>
+                  <div class="control">
+                    <input
+                      class="input custom-input is-large"
+                      type="email"
+                      id="register-email"
+                      placeholder="Abc@def.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="is-flex is-flex-direction-column" style="margin-bottom: 40px;">
+                  <p class="is-size-7">A link to set a new password will be sent to your email address.</p>
+                  <p class="mt-4 is-size-7">
+                    Your personal data will be used to support your experience throughout this website, to manage access
+                    to your account, and for other purposes described in our
+                    <a class="terms-link" href="terms.html">terms and conditions</a>.
+                  </p>
+                </div>
+                <div class="is-flex" style="align-self: end">
+                  <button
+                    type="submit"
+                    class="button is-rounded has-background-white has-text-black mt-5"
+                    id="register-button"
+                  >
+                    Register
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="section has-background-white footer-section pt-6 pb-6">
+      <div id="footer-placeholder">
+        <!-- Footer will be dynamically loaded here -->
+      </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    
+    <!-- Feature Scripts - Non-module versions -->
+    <script src="./js/data/countries.js"></script>
+    <script src="./js/data/products.js"></script>
+    <script src="./js/features/animations.js"></script>
+    <script src="./js/features/cartHandler.js"></script>
+    <script src="./js/features/favoritesHandler.js"></script>
+    <script src="./js/features/footerLoader.js"></script>
+    <script src="./js/features/navbarLoader.js"></script>
+    <script src="./js/features/navigation.js"></script>
+    <script src="./js/features/pagination.js"></script>
+    
+    <!-- UI Components -->
+    <script src="./js/ui/cartItem.js"></script>
+    <script src="./js/ui/cartModal.js"></script>
+    <script src="./js/ui/checkoutResume.js"></script>
+    <script src="./js/ui/favoriteProduct.js"></script>
+    <script src="./js/ui/favoritesModal.js"></script>
+    <script src="./js/ui/footer.js"></script>
+    <script src="./js/ui/navbar.js"></script>
+    <script src="./js/ui/orderSummaryItem.js"></script>
+    <script src="./js/ui/paymentForm.js"></script>
+    <script src="./js/ui/processingLoader.js"></script>
+    <script src="./js/ui/productCard.js"></script>
+    <script src="./js/ui/toastNotification.js"></script>
+    
+    <!-- Page-specific scripts -->
+    <script src="./js/pages/accountPageLogic.js"></script>
+    
+    <!-- Main Application Script - Non-module version -->
+    <script src="./js/main-local.js"></script>
+  </body>
+</html>
