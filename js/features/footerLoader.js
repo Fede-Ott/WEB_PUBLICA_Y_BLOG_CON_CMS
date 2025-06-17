@@ -26,6 +26,18 @@ function loadFooter(targetSelector = "#footer-placeholder") {
  * Set up event listeners for footer elements
  */
 function setupFooterEvents() {
+  // Blog link: open in new tab and go to external site
+  const blogLink = document.querySelector('#footer-wishlist');
+  if (blogLink) {
+    blogLink.setAttribute('target', '_blank');
+    blogLink.setAttribute('rel', 'noopener noreferrer');
+    blogLink.addEventListener('click', function(e) {
+      // Remove any previous preventDefault (from wishlist modal)
+      e.stopImmediatePropagation();
+      // Let the browser handle the external link in a new tab
+    });
+  }
+
   // Wishlist button in footer
   const footerWishlist = document.querySelector("#footer-wishlist");
   if (footerWishlist) {

@@ -60,3 +60,16 @@ function generateFooterHTML() {
     </div>
   `;
 }
+
+// Ensure external Blog link opens in a new tab and works as expected
+document.addEventListener('DOMContentLoaded', function() {
+  const blogLink = document.getElementById('footer-wishlist');
+  if (blogLink) {
+    blogLink.setAttribute('target', '_blank');
+    blogLink.setAttribute('rel', 'noopener noreferrer');
+    blogLink.addEventListener('click', function(e) {
+      // Allow default behavior, but ensure it always opens in a new tab
+      this.setAttribute('target', '_blank');
+    });
+  }
+});
