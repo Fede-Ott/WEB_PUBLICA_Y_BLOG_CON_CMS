@@ -5,7 +5,7 @@ function generateOrderSummaryItemHTML(item, product) {
   const imagePath =
     product.images && product.images.length > 0
       ? product.images[0].replace(/^\.\.\//, "./")
-      : "../assets/images/placeholder.png";
+      : "../assets/images/placeholder.webp";
 
   if (isNaN(price)) {
     console.warn(`Invalid price for product ID ${item.productId}:`, product.price);

@@ -3,7 +3,7 @@ function generateCartItemHTML(item, product) {
   const imagePath =
     product.images && product.images.length > 0
       ? product.images[0].replace("../", "./")
-      : "./assets/images/placeholder.png";
+      : "./assets/images/placeholder.webp";
 
   // Calculate item total price
   const pricePerItem = parseFloat(product.price.replace("€", "").replace(",", "."));

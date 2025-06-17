@@ -1,7 +1,7 @@
 /* This file contains the CSS styles for sections. */
 
 .mood-section {
-  background-image: url("../../assets/images/emotionsocksbg.png");
+  background-image: url("../../assets/images/emotionsocksbg.webp");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -30,31 +30,31 @@
 
 /* Hero Section */
 .checkout-hero-section {
-  background-image: url("../../assets/images/checkoutbg.png");
+  background-image: url("../../assets/images/checkoutbg.webp");
   background-size: cover;
   background-position: center;
 }
 
 .account-hero-section {
-  background-image: url("../../assets/images/accountbg.jpg");
+  background-image: url("../../assets/images/accountbg.webp");
   background-size: cover;
   background-position: center;
 }
 
 .about-hero-section {
-  background-image: url("../../assets/images/aboutbg.png");
+  background-image: url("../../assets/images/aboutbg.webp");
   background-size: cover;
   background-position: center;
 }
 
 .terms-hero-section {
-  background-image: url("../../assets/images/termsheader.png");
+  background-image: url("../../assets/images/termsheader.webp");
   background-size: cover;
   background-position: center;
 }
 
 .faq-hero-section {
-  background-image: url("../../assets/images/faqbg.png");
+  background-image: url("../../assets/images/faqbg.webp");
   background-size: cover;
   background-position: center;
 }

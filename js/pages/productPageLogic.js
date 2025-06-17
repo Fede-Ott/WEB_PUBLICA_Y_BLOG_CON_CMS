@@ -291,7 +291,7 @@ function setupImageGallery(product) {
   const allDisplayImages = [...baseProductImages.map((src) => src.replace("../", "./")), sizeChartPath];
 
   // Set initial main image
-  const mainImgSrc = allDisplayImages.length > 0 ? allDisplayImages[0] : "./assets/images/placeholder.png";
+  const mainImgSrc = allDisplayImages.length > 0 ? allDisplayImages[0] : "./assets/images/placeholder.webp";
 
   // Update main images
   updateMainImages(mainImgSrc, product.name);

@@ -1,7 +1,7 @@
 /* This file contains the CSS styles for the shop page. */
 
 .shop-hero {
-  background-image: url("../../assets/images/shopbg.jpg");
+  background-image: url("../../assets/images/shopbg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

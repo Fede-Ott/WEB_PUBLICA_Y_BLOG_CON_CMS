@@ -3,7 +3,7 @@ function generateFavoriteProductItemHTML(product) {
   const imagePath =
     product.images && product.images.length > 0
       ? product.images[0].replace("../", "./")
-      : "./assets/images/placeholder.png";
+      : "./assets/images/placeholder.webp";
 
   return `
     <div class="box has-background-white mb-4" data-product-id="${product.id}">

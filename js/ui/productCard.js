@@ -5,7 +5,7 @@ function generateProductCard(product) {
       ? // Use the first image and adjust the path relative to the root
         product.images[0].replace("../", "./")
       : // Fallback to a placeholder if no images are available
-        "./assets/images/placeholder.png";
+        "./assets/images/placeholder.webp";
 
   return `
     <div class="column is-full-mobile is-one-quarter-tablet product-card-column" data-product-id="${product.id}">
